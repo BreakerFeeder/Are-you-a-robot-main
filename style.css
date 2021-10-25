@@ -1,0 +1,69 @@
+body{
+background-color: #333;
+}
+* {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 !important;
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #333;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+:root {
+  --light-c: #ddd;
+  --dark-c: #111;
+  --text-shadow: 5px 2px 2px rgba(0, 0, 0, 0.8);
+}
+h1 {
+  color: orange;
+  margin: 4rem 0;
+  text-shadow: var(--text-shadow);
+}
+h1 span {
+  background-color: var(--dark-c);
+  color: var(--light-c);
+  padding: 0.2rem 1rem;
+}
+label {
+  color: var(--light-c);
+}
+.container {
+    margin-top:  3rem;;
+  width: 350px;
+  height: 450px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.8);
+}
+.element {
+  width: 100px;
+  height: 100px;
+  border: 1px solid var(--dark-c);
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  color: white;
+  text-shadow: var(--text-shadow);
+  border-radius: 5px;
+  transition:all 0.3s ease;
+}
+.element:hover{
+    cursor: pointer;
+    box-shadow: inset 0 0 40px 5px var(--dark-c);
+    border-radius:50%;
+}
+
+input[type="checkbox"], label{
+    display: inline;
+    size:  10px;
+}
+.btn{
+    width: 120px;
+    height: 40px;
+    
+}
